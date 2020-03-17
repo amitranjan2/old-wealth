@@ -78,7 +78,7 @@ function Navigation() {
 
 
         <Navbar expand="lg" variant="dark" bg="dark">
-          <Navbar.Brand to="/">Invest First</Navbar.Brand>
+          <Navbar.Brand to="/">Wealth First</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">

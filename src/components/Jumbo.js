@@ -75,7 +75,7 @@ const Styles = styled.div`
           <div className="float-box-footer">
           <div class="wrapper">
         <h1 className="p4">Welcome</h1>
-        <p className="p4">Invest First is the perfect platform for beginners, students, and also for intermediate to learn everything about share market, investing, and trading.
+        <p className="p4">Wealth First is the perfect platform for beginners, students, and also for intermediate to learn everything about share market, investing, and trading.
  <br></br>Here, you will find Stock market-related books, movies, Various best rank You tube trading Channels, and many more. .....</p>
 
  <p className="p4">You can also add your favourites books ,youtube channels and movies.</p>
