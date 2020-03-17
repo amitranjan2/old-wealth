@@ -15,7 +15,7 @@ import Books from './components/Books';
 import Movies from './components/Movies';
 import Contact from './components/Contact';
 import PostList from './components/Youtube';
-import Learn from './components/Learn';
+
 import TabComponent from './components/Tab';
 // or
 
