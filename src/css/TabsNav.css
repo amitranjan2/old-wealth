@@ -1,0 +1,127 @@
+.tab-icon-door {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    fill: var(--main-grey);
+  }
+
+  /* Media Tab Nav #1 */
+  @media (max-width: 900px) {
+    .tab-icon-door {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+
+  /* Tab Nav #2 */
+  .tab-icon-devices {
+    width: 9.6875rem;
+    height: 9.6875rem;
+    fill: var(--main-grey);
+  }
+
+  /* Media Tab Nav #2 */
+  @media (max-width: 900px) {
+    .tab-icon-devices {
+      width: 8rem;
+      height: 8rem;
+    }
+  }
+
+  /* Tab Nav #3 */
+  .tab-icon-price {
+    width: 4.375rem;
+    height: 4.375rem;
+    fill: var(--main-grey);
+  }
+
+  /* Media Tab Nav #3 */
+  @media (max-width: 900px) {
+    .tab-icon-price {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+
+  /* Tabs */
+  .tabs {
+    padding-top: 1rem;
+
+  }
+  .lg{
+
+    color: black;
+  }
+
+  .tab-nav-container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    list-style: none;
+    color: var(--main-grey);
+    margin: 0 12%;
+  }
+  .tabs {
+    padding-top: 1rem;
+    background-color:#17a2b8;
+  }
+  /* Tabs Nav Hover Effect */
+  ul li:hover {
+    color: rgb(99, 18, 18);
+
+
+    cursor: pointer;
+  }
+
+  ul li:hover svg path {
+    stroke-width: 6px;
+    fill: transparent;
+    stroke: #009FFD;
+    stroke-dasharray: 85 400;
+    stroke-dashoffset: -220;
+    transition: 1s all ease;
+stroke-dasharray: 50 0;
+stroke-width: 3px;
+stroke-dashoffset: 0;
+margin-top: 0;
+  position: relative;
+  width: 150px;
+  /*make sure to use same height/width as in the html*/
+  height: 40px;
+  display: inline-block;
+  border-radius: 3px;
+  margin-left: 5px;
+  margin-right: 5px
+  }
+
+  /* The Active Tab */
+  .active {
+    border-bottom: 4px solid var(--main-red);
+  }
+
+  .tab-selected {
+    color: #fff;
+  }
+
+  .tab-selected svg path {
+    fill: #fff;
+  }
+
+  /* Media  */
+  @media (min-width: 900px) {
+    .mdScreen {
+      display: none;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .lgScreen {
+      display: none;
+    }
+    .mdScreen {
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+  }
