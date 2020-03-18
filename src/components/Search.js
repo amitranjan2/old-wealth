@@ -35,6 +35,7 @@ class Search extends React.Component {
        };
     onChange = e => {
 
+
      // this.props.searchMovie(e.target.value);
     };
     onSubmit = e => {
@@ -54,6 +55,7 @@ class Search extends React.Component {
             .then(json => {
                 console.log(json);
              console.log(json.items[0].id.channelId);
+             alert('Thanks . We will review and add your channel ');
 
              this.VideoList(json.items[0].id.channelId)
                 this.setState({
@@ -66,6 +68,7 @@ class Search extends React.Component {
                 alert('No Channel By That Name');
 
             });
+          
       };
 
 
@@ -94,7 +97,7 @@ class Search extends React.Component {
               </button>
             </form>
           </div>
-           <iframe src="https://www.youtube.com/embed/2MpUj-Aua48?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=0&autoplay=0"  width="560" height="315"  frameborder="0" allowfullscreen></iframe>
+           {/* <iframe src="https://www.youtube.com/embed/2MpUj-Aua48?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=0&autoplay=0"  width="560" height="315"  frameborder="0" allowfullscreen></iframe> */}
           {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/2qhCjgMKoN4?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in- picture" allowfullscreen style="position: absolute;top:0;left:0;opacity:0;" id="player"></iframe> */}
           {/* <iframe src="https://www.youtube.com/embed/2MpUj-Aua48?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=0&autoplay=1"  width="560" height="315"  frameborder="0" allowfullscreen></iframe> */}
 
