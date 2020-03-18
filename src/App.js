@@ -48,7 +48,7 @@ function App({ match }) {
 
   <div>
 <Login />
-<Movies/>
+
 </div>
 } />
 

@@ -16,7 +16,7 @@ class Footer extends Component {
           <p>
               <a href="/About">About us</a> | <a href="https://www.investello.com/Companies">Stocks</a>
 
-              | <a href="/Terms">Terms and Conditions</a> | <a href="/Contact">Contact us</a>
+           | <a href="/About">Contact us</a>
           </p>
           <p>© 2020 - Invest First Spend Later</p>
       </div>
