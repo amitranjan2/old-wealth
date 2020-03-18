@@ -81,6 +81,12 @@ const Styles = styled.div`
   color: cyan;
   text-align-last: center;
 }
+
+
+.h1, h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
 `;
 
 
