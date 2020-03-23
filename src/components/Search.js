@@ -1,11 +1,12 @@
 import React from 'react';
 import './Search.css';
 import Login from './Login';
+import Video from './Video'
 class Search extends React.Component {
 
   state = {
     isData: false,
-    userID: "",
+    items: "",
     name: "",
     email: "",
     picture: ""
@@ -21,11 +22,13 @@ class Search extends React.Component {
         .then(res => res.json())
         .then(json => {
 
-            console.log(json);
+            console.log(json.items.map(n=>n.id.videoId));
+            const result=json.items.map(n=>'https://www.youtube.com/embed/'+n.id.videoId);
             this.setState({
-                items: json,
+                items: result
 
             })
+            console.log(this.state.items);
         }).catch((err) => {
             console.log(err);
             alert('No Channel By That Name');
@@ -53,7 +56,7 @@ class Search extends React.Component {
         fetch(`https://www.googleapis.com/youtube/v3/search?part=id,snippet&key=AIzaSyDz3kYBmhu46LzSuIxrgU4NGa-wExqEq2U&type=channel&q=${user}&maxResults=3`)
             .then(res => res.json())
             .then(json => {
-                console.log(json);
+                //console.log(json);
              console.log(json.items[0].id.channelId);
              alert('Thanks . We will review and add your channel ');
 
@@ -68,8 +71,12 @@ class Search extends React.Component {
                 alert('No Channel By That Name');
 
             });
-          
+
+
+
       };
+
+
 
 
     render() {
@@ -95,11 +102,15 @@ class Search extends React.Component {
               <button type="submit" className="btn btn-primary btn-bg mt-3">
                 Add channel
               </button>
-            </form>
+            </form>ee
+
           </div>
-           {/* <iframe src="https://www.youtube.com/embed/2MpUj-Aua48?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=0&autoplay=0"  width="560" height="315"  frameborder="0" allowfullscreen></iframe> */}
+          
+
+ {/* <iframe src="https://www.youtube.com/embed/2MpUj-Aua48?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=0&autoplay=0"  width="560" height="315"  frameborder="0" allowfullscreen></iframe> */}
           {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/2qhCjgMKoN4?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in- picture" allowfullscreen style="position: absolute;top:0;left:0;opacity:0;" id="player"></iframe> */}
-          {/* <iframe src="https://www.youtube.com/embed/2MpUj-Aua48?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=0&autoplay=1"  width="560" height="315"  frameborder="0" allowfullscreen></iframe> */}
+
+
 
 
         </div>

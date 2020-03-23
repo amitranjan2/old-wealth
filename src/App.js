@@ -15,6 +15,10 @@ import Books from './components/Books';
 import Movies from './components/Movies';
 import Contact from './components/Contact';
 import PostList from './components/Youtube';
+import Results from './components/Learn';
+import Apper from './components/Video';
+import Learn from './components/Learn';
+import Appe from './components/skills';
 
 import TabComponent from './components/Tab';
 // or
@@ -47,7 +51,11 @@ function App({ match }) {
     <Route path='/video' render={props =>
 
   <div>
-<Login />
+{/* <Search /> */}
+
+<Login/>
+< Results />
+    <Footer />
 
 </div>
 } />
@@ -61,8 +69,7 @@ function App({ match }) {
     </Route>
 
     <Route exact path="/data">
-  <PostList />
-
+ <Appe/>
     </Route>
 
     <Route path="/Books">
@@ -70,7 +77,8 @@ function App({ match }) {
     <Footer />
     </Route>
     <Route path="/learn">
-    <Books />
+      <Login/>
+    < Results />
     <Footer />
     </Route>
     <Route path="/Chart">

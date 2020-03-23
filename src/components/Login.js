@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import GoogleLogin from 'react-google-login';
 import './Login.css';
 import Navigation from '../components/Navigation';
-import Search from './Search';
+import Apper from './Video';
 import Card from 'react-bootstrap/Card'
 import { Navbar, Nav, NavDropdown, Form,  FormControl, Button, Table} from 'react-bootstrap';
 import { BrowserRouter as Router,Switch,Route  }from 'react-router-dom';
@@ -94,7 +94,7 @@ responseGoogle = (response) => {
 
     if (this.state.isLoggedIn) {
       fbContent = (
- <Search />
+ <Apper />
       );
     } else {
 
@@ -107,7 +107,7 @@ responseGoogle = (response) => {
   <Card.Body>
     <Card.Title><h1>Need Your Contribution!</h1></Card.Title>
     <Card.Text>
-     <h2>Please Login to add your favorites in this section</h2>
+     <h2>Please Login to add your favorites channel in this section</h2>
     </Card.Text>
     <GoogleLogin
         clientId="294896410820-ee92to39jphv97ct2aoho378rnq2k18v.apps.googleusercontent.com"
@@ -126,7 +126,7 @@ responseGoogle = (response) => {
       );
     }
 
-    return <div className="Sap">{fbContent}</div>;
+    return <div >{fbContent}</div>;
   }
 
 
