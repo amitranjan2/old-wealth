@@ -33,7 +33,7 @@ const Styles = styled.div`
     font-size: 22px;
     text-align: center!important;
 
-    color:black;
+    color:red;
     font-weight: bold;
   }
 .ccc{
