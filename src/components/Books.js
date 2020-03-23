@@ -85,6 +85,7 @@ const Books = () => (
 
   <Card.Body>
     <Card.Title>Best Overall: The Intelligent Investor</Card.Title>
+
     <Card.Text>
     Before his death, "The Intelligent Investor" author Benjamin Graham was a renowned professor known as the godfather of investing, and Jason Zweig, The Wall Street Journal columnist, adds in some commentary in this revised edition.
 
@@ -92,7 +93,7 @@ This book takes a different approach from other investing books, although it’s
 
 Graham published the first edition of this book in 1949, and Buffett himself has called that version “the best book on investing ever written.”
     </Card.Text>
-
+    <Button href="http://e-reading-lib.com/bookreader.php/133361/The_Intelligent_Investor.pdf" variant="info">Download</Button>{' '}
 
     <Card.Title>Runner-Up, Best Overall: The Little Book of Common Sense Investing</Card.Title>
     <Card.Text>
@@ -100,6 +101,7 @@ Graham published the first edition of this book in 1949, and Buffett himself has
 
 "The Little Book of Common Sense Investing: The Only Way to Guarantee Your Fair Share of Stock Market Returns" takes the surprising approach that for many investors, the stock market is a lose-lose proposition. Bogle then explains what he learned to turn the odds in his favor. This isn't his only book, but it’s the one that manages to cover his own personal innovative techniques and truths in a relatively short and easy read.
     </Card.Text>
+    <Button href="https://mo.8freebooks.net/2019/10/er-2.html" variant="info">Download</Button>{' '}
 
   <Card.Title>Best Essay Collection: The Essays of Warren Buffett</Card.Title>
     <Card.Text>
@@ -107,6 +109,8 @@ Graham published the first edition of this book in 1949, and Buffett himself has
 
 The title addresses “corporate America,” but you can take that to include shareholders. The book offers an excellent explanation of the relationship between corporations and their shareholders, which makes it ideal for those new to investing. Plus, this collection of essays spans more than 50 years.
     </Card.Text>
+    <Button href="https://epdf.pub/queue/the-essays-of-warren-buffett-lessons-for-corporate-america.html#" variant="info">Download</Button>{' '}
+
 
     <Card.Title>Best for Beginners: A Random Walk Down Wall Street</Card.Title>
     <Card.Text>
@@ -114,6 +118,8 @@ The title addresses “corporate America,” but you can take that to include sh
 
 Malkiel’s book includes some handy definitions of investment terms, and it applies them to various investment strategies geared toward different stages in life. He emphasizes long-term investments rather than get-rich-quick schemes, and how to predict prices and avoid common mistakes. This is a revised edition of a book that’s been around for a while. "A Random Walk" has sold more than 1.5 million copies to date
     </Card.Text>
+    <Button href="http://site.iugaza.edu.ps/wdaya/files/2013/03/A-Random-Walk-Down-Wall-Street.pdf" variant="info">Download</Button>{' '}
+
 
 
     <Card.Title>Best Psychological: Thinking, Fast and Slow</Card.Title>
@@ -122,6 +128,8 @@ Malkiel’s book includes some handy definitions of investment terms, and it app
 
 His New York Times bestseller, "Thinking, Fast and Slow," delves into how your thought processes can affect your success in investing. Everyone harbors their own little biases, sometimes subconsciously. Kahneman explains how to identify your own and lock them away so you can make investment decisions without their input, thinking clearly, rationally, and analytically. Note that this book isn’t just about investing, although that’s its focus. Kahneman also explains how biases can affect our everyday lives and other financial decisions.
     </Card.Text>
+    <Button href="http://sysengr.engr.arizona.edu/OLLI/lousyDecisionMaking/KahnemanThinkingFast&Slow.pdf" variant="info">Download</Button>{' '}
+
 
 
     <Card.Title>Best Skill-Building: One Up on Wall Street</Card.Title>
@@ -133,6 +141,9 @@ Lynch believes that solid investment opportunities are everywhere. They litter t
 "One Up on Wall Street" has sold more than 1 million copies since its release in 2000. The New York Times says Lynch, a renowned investor in his own right, is “in a league by himself.”
     </Card.Text>
 
+    <Button href="https://mo.8freebooks.net/2019/11/jkpl.html" variant="info">Download</Button>{' '}
+
+
 
 
 
@@ -143,6 +154,8 @@ Lynch believes that solid investment opportunities are everywhere. They litter t
 "Principles: Life and Work" is part autobiography, part instructional. Dalio shares his secrets and insights and explains how businesses, individuals, and organizations can adopt them, including a set of rules for applying them to investing, life, your business, and your finances in general.
     </Card.Text>
 
+    <Button href="http://library.manipaldubai.com/DL/My_Life_and_Work.pdf" variant="info">Download</Button>{' '}
+
 
 
     <Card.Title>Best Classic: The Only Investment Guide You’ll Ever Need</Card.Title>
@@ -151,6 +164,9 @@ Lynch believes that solid investment opportunities are everywhere. They litter t
 
 Andrew Tobias doesn’t just address the wealthy investor. He offers tips and guidance for those with more limited capital, and he does it in a frank, easy-to-understand, and often humorous language. He dedicates the book to his broker, who, he says, “from time to time made me just that.” This book has helped educate over 1 million readers to date.
     </Card.Text>
+
+    <Button href="https://www.8freebooks.net/download-one-up-on-wall-street-peter-lynch-pdf/" variant="info">Download</Button>{' '}
+
     </Card.Body>
 
 
@@ -165,4 +181,5 @@ Andrew Tobias doesn’t just address the wealthy investor. He offers tips and gu
 
 
   )
+
   export default Books;
