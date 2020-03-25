@@ -8,6 +8,7 @@ import Apper from './Video';
 import Card from 'react-bootstrap/Card'
 import { Navbar, Nav, NavDropdown, Form,  FormControl, Button, Table} from 'react-bootstrap';
 import { BrowserRouter as Router,Switch,Route  }from 'react-router-dom';
+import { Redirect } from 'react-router';
 // or
 // import { GoogleLogin } from 'react-google-login';
 
@@ -54,15 +55,50 @@ class Login extends React.Component {
     picture: ""
   };
 
+
+
+  responseGoog = (response) => {
+    console.log(response);
+    var name = response + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) === ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) === 0) {
+        this.setState({
+          isLoggedIn: true,
+
+
+        });
+      }
+    }
+
+
+  }
+  componentWillMount() {
+
+    {this.responseGoog("auth")}
+    console.log("response.accessToken");
+
+
+  }
+
 responseGoogle = (response) => {
   this.setState({
     isLoggedIn: true,
-    // userID: response.userID,
-    // name: response.name,
-    // email: response.email,
+
 
   });
-    console.log(response);
+
+
+ console.log(response.accessToken);
+  var d = new Date();
+  d.setTime(d.getTime() + (1 * 24 * 60 * 60 * 1000));
+  var expires = "expires="+d.toUTCString();
+  document.cookie = "auth" + "=" + response.accessToken+ ";" + expires + ";path=/";
+  //   console.log(response);
     // setLogg(logg + 1);
     // console.log(logg);
     // history.push("/search");
@@ -80,6 +116,9 @@ responseGoogle = (response) => {
       //this.props.history.push("/search");
 
     }
+
+
+
 
 
 //   }

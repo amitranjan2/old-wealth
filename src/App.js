@@ -78,8 +78,8 @@ function App({ match }) {
     </Route>
     <Route path="/learn">
       <Login/>
-    < Results />
-    <Footer />
+    {/* < Results />
+    <Footer /> */}
     </Route>
     <Route path="/Chart">
     <Chart />
