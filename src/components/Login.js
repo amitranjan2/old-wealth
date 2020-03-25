@@ -97,7 +97,7 @@ responseGoogle = (response) => {
   var d = new Date();
   d.setTime(d.getTime() + (1 * 24 * 60 * 60 * 1000));
   var expires = "expires="+d.toUTCString();
-  document.cookie = "auth" + "=" + response.accessToken+ ";" + expires + ";path=/";
+  document.cookie = "auth" + "=" + response.accessToken+ ";" + expires;
   //   console.log(response);
     // setLogg(logg + 1);
     // console.log(logg);
