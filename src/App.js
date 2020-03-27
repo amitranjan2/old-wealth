@@ -18,7 +18,7 @@ import PostList from './components/Youtube';
 import Results from './components/Learn';
 import Apper from './components/Video';
 import Learn from './components/Learn';
-import Appe from './components/skills';
+import Skills from './components/Skills';
 
 import TabComponent from './components/Tab';
 // or
@@ -69,7 +69,7 @@ function App({ match }) {
     </Route>
 
     <Route exact path="/data">
- <Appe/>
+ <Skills/>
     </Route>
 
     <Route path="/Books">
