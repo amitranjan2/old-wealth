@@ -65,7 +65,7 @@
   }
   .tabs {
     padding-top: 1rem;
-    background-color:#17a2b8;
+    background-color:rgb(255, 255, 255);
   }
   /* Tabs Nav Hover Effect */
   ul li:hover {

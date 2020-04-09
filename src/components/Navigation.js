@@ -14,8 +14,12 @@ const Styles = styled.div`
     position:relative;
     z-index:99999;
   }
+  .bg {
+    background-color: white;
+}
+
   .navbar {
-    background-color: red;
+    background-color: white;
   }
 .nav-link{
 
@@ -25,7 +29,7 @@ const Styles = styled.div`
 
 }
   a, .navbar-brand, .navbar-nav .nav-link {
-    color: #fff;
+    color: black;
 
     &:hover {
       color: red;
@@ -77,7 +81,7 @@ function Navigation() {
   <Styles>
 
 
-        <Navbar expand="lg" variant="dark" bg="dark">
+        <Navbar expand="lg" className="bg" >
           <Navbar.Brand to="/">Wealth First</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
@@ -85,7 +89,7 @@ function Navigation() {
                   <Nav.Link href="/">Home</Nav.Link>
 
 
-                  <Nav.Link href="/Chart">  Chart Analysis</Nav.Link>
+                  {/* <Nav.Link href="/Chart">  Chart Analysis</Nav.Link> */}
 
                   <NavDropdown bsClass="drop" title="Resources" id="basic-nav-dropdown" >
               <NavDropdown.Item>
@@ -96,10 +100,13 @@ function Navigation() {
             }>
                 Video   </NavLink> </NavDropdown.Item>
 
-                    <NavDropdown.Item>      <NavLink to="/Books" exact activeStyle={
-                                                                          { color:'green' }
-                                                                                   }>
-                Books  </NavLink></NavDropdown.Item>
+                    <NavDropdown.Item>
+
+                        <NavLink to="/Books" exact activeStyle={ { color:'green' }}> Books  </NavLink></NavDropdown.Item>
+                        <NavDropdown.Item>
+
+                        <NavLink to="/Chart" exact activeStyle={ { color:'green' }}> Charts  </NavLink></NavDropdown.Item>
+
 
                 </NavDropdown>
 
