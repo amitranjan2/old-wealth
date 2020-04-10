@@ -9,7 +9,6 @@ import { BrowserRouter as Router,Switch,Route  }from 'react-router-dom';
 
 import Navbody from './components/Navbody';
 import Jumboo from './components/Jumbo';
-import Chart from './components/Chart';
 import Footer from './components/Footer';
 import Books from './components/Books';
 import Movies from './components/Movies';
@@ -20,6 +19,7 @@ import Apper from './components/Video';
 import Learn from './components/Learn';
 import Skills from './components/Skills';
 import Cardforchart from './components/Card';
+import CardforBook from './components/CardforBook';
 
 
 import TabComponent from './components/Tab';
@@ -49,8 +49,8 @@ function App({ match }) {
     <Footer />
     </Route>
 
-    <Route exact path="/card">
-  <Cardforchart/>
+    <Route exact path="/cbook">
+  <CardforBook/>
     </Route>
 
 
@@ -79,7 +79,7 @@ function App({ match }) {
     </Route>
 
     <Route path="/Books">
-    <Books />
+    <CardforBook/>
     <Footer />
     </Route>
     <Route path="/learn">
