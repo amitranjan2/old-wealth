@@ -19,6 +19,8 @@ import Results from './components/Learn';
 import Apper from './components/Video';
 import Learn from './components/Learn';
 import Skills from './components/Skills';
+import Cardforchart from './components/Card';
+
 
 import TabComponent from './components/Tab';
 // or
@@ -45,6 +47,10 @@ function App({ match }) {
     <TabComponent />
     <Jumboo />
     <Footer />
+    </Route>
+
+    <Route exact path="/card">
+  <Cardforchart/>
     </Route>
 
 
@@ -82,8 +88,8 @@ function App({ match }) {
     <Footer /> */}
     </Route>
     <Route path="/Chart">
-    <Chart />
-    <Footer />
+    <Cardforchart/>
+    {/* <Footer /> */}
     </Route>
 
     <Route path="/movie">
