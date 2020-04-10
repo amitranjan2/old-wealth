@@ -37,13 +37,34 @@ const Styles = styled.div`
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
 }
-.insidie{
 
+
+
+@media (min-width: 978px) {
+
+  .insidie{
 
     transition: transform .2s; /* Animation */
 
+
+    display: flex;
+    flex-direction: column;
+
+    width:85%;
+margin:150px auto;
+
   }
 
+}
+
+.inner{
+width: 50%;
+height: 50%;
+top: 25%;
+margin: 0 auto;
+position: relative;
+background:orange;
+}
   @media (min-width: 576px)
 
 
@@ -57,6 +78,7 @@ const Styles = styled.div`
         flex-direction: column;
         overflow: hidden;
         margin: 0 20px 40px;
+        margin-top:30px;
         min-height: 300px;
         background: #fff 50%;
         background-size: cover;
@@ -76,8 +98,12 @@ const Styles = styled.div`
         cursor:pointer;
     }
 .inside{
-    text-shadow: none;
-    background: #F8F9FC;
+ min-height:100vh;
+  margin:0 auto;
+  overflow:hidden;
+  float:left;
+  background-color:#F8F9FE;
+
 }
 a {
   color: black;
@@ -105,65 +131,73 @@ function Cardforchart() {
 
       <Styles>
 
-          <div className="inside">
-          <div className="insidie">
+
+<div className="inside">
+    <div className="insidie">
+
+
 
 
 <CardDeck>
 
-  <Card >
-  <a href="https://in.tradingview.com/">
+<Card >
+<a href="https://in.tradingview.com/">
 
-    <Card.Img variant="top" src={tradeview} />
-    <Card.Body>
-      <Card.Title>TradingView</Card.Title>
-      <Card.Text>
-      <p className="tv-blue-background-block__text">Easy and intuitive for beginners – TradingView has all the charting tools you need to share and view trading ideas. Real-time data and browser-based charts let you do your research from anywhere, since there are no installations or complex setups.</p>
+  <Card.Img variant="top" src={tradeview} />
+  <Card.Body>
+    <Card.Title>TradingView</Card.Title>
+    <Card.Text>
+    <p className="tv-blue-background-block__text">Easy and intuitive for beginners – TradingView has all the charting tools you need to share and view trading ideas. Real-time data and browser-based charts let you do your research from anywhere, since there are no installations or complex setups.</p>
 
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted"></small>
-    </Card.Footer>
-    </a>
-  </Card>
+    </Card.Text>
+  </Card.Body>
+  <Card.Footer>
+    <small className="text-muted"></small>
+  </Card.Footer>
+  </a>
+</Card>
 
-  <Card>
-  <a href="https://in.investing.com/">
+<Card>
+<a href="https://in.investing.com/">
 
-    <Card.Img variant="top" src={Investing } />
-    <Card.Body>
-      <Card.Title>Investing.com</Card.Title>
-      <Card.Text>
-      Investing.com is a financial markets platform providing real-time data, quotes, charts, financial tools, breaking news and analysis across 250 exchanges around the world in 44 language editions. With more than 21 million monthly users, and over 180 million sessions, Investing.com is one of the top three global financial websites according to both SimilarWeb and Alexa
-        content.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted"></small>
-    </Card.Footer>
-    </a>
-  </Card>
-  <Card>
-  <a href="https://chartink.com/">
+  <Card.Img variant="top" src={Investing } />
+  <Card.Body>
+    <Card.Title>Investing.com</Card.Title>
+    <Card.Text>
+    Investing.com is a financial markets platform providing real-time data, quotes, charts, financial tools, breaking news and analysis across 250 exchanges around the world in 44 language editions. With more than 21 million monthly users, and over 180 million sessions, Investing.com is one of the top three global financial websites according to both SimilarWeb and Alexa
+      content.
+    </Card.Text>
+  </Card.Body>
+  <Card.Footer>
+    <small className="text-muted"></small>
+  </Card.Footer>
+  </a>
+</Card>
+<Card>
+<a href="https://chartink.com/">
 
-    <Card.Img variant="top" src={chartlink}/>
-    <Card.Body>
-      <Card.Title>Chartlink</Card.Title>
-      <Card.Text>
-      Chartink.com provides tools for technical and fundamental analysis. We provide the following tools free of cost <br></br>
-      Candlestick & PnF Charts  <br></br>Custom Stock Screeners<br></br>  Intraday Charting & Scans  <br></br>Stock Watchlists <br></br> Historical Price Data Back to 1980
-      <br></br>Accurate data directly from Exchange
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted"></small>
-    </Card.Footer>
-    </a>
-  </Card>
+  <Card.Img variant="top" src={chartlink}/>
+  <Card.Body>
+    <Card.Title>Chartlink</Card.Title>
+    <Card.Text>
+    Chartink.com provides tools for technical and fundamental analysis. We provide the following tools free of cost <br></br>
+    Candlestick & PnF Charts  <br></br>Custom Stock Screeners<br></br>  Intraday Charting & Scans  <br></br>Stock Watchlists <br></br> Historical Price Data Back to 1980
+    <br></br>Accurate data directly from Exchange
+    </Card.Text>
+  </Card.Body>
+  <Card.Footer>
+    <small className="text-muted"></small>
+  </Card.Footer>
+  </a>
+</Card>
 </CardDeck>
-</div>
-</div>
+    </div>
+  </div>
+
+
+
+
+
 
       </Styles>
 
