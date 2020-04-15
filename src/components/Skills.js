@@ -1,71 +1,137 @@
 import React from 'react';
-import axios from 'axios';
+import { Jumbotron as Jumbo, Container } from 'react-bootstrap';
+import styled from 'styled-components';
+import boatImage from '../assests/boatImage.jpg';
 
-class Skills extends React.Component{
+const Styles = styled.div`
+.botdy {
+	background-color: black;
+	position:fixed;
 
-  constructor(props) {
-	super(props);
-	this.state = {
-  	name: '',
-  	email: '',
-  	message: ''
+
+    width: 100%;
+    height: 100%;
+
+
+  }
+  .svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -400px;
+  }
+  .message-box {
+	height: 200px;
+	width: 380px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: 50px;
+	color: #FFF;
+	font-family: Roboto;
+	font-weight: 300;
+  }
+  .message-box h1 {
+	font-size: 60px;
+	line-height: 46px;
+	margin-bottom: 40px;
+  }
+  .buttons-con .action-link-wrap {
+	margin-top: 40px;
+  }
+  .buttons-con .action-link-wrap a {
+	background: #68c950;
+	padding: 8px 25px;
+	border-radius: 4px;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 14px;
+	transition: all 0.3s linear;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 10px
+  }
+  .buttons-con .action-link-wrap a:hover {
+	background: #5A5C6C;
+	color: #fff;
+  }
+
+  #Polygon-1 , #Polygon-2 , #Polygon-3 , #Polygon-4 , #Polygon-4, #Polygon-5 {
+	animation: float 1s infinite ease-in-out alternate;
+  }
+  .Polygon-2 {
+	animation-delay: .2s;
+  }
+  .Polygon-3 {
+	animation-delay: .4s;
+  }
+  .Polygon-4 {
+	animation-delay: .6s;
+  }
+  .Polygon-5 {
+	animation-delay: .8s;
+  }
+
+  @keyframes float {
+	  100% {
+	  transform: translateY(20px);
+	}
+  }
+  @media (max-width: 450px) {
+	svg {
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  margin-top: -250px;
+	  margin-left: -190px;
+	}
+	.message-box {
+	  top: 50%;
+	  left: 50%;
+	  margin-top: -100px;
+	  margin-left: -190px;
+	  text-align: center;
 	}
   }
 
-  handleSubmit(e){
-    e.preventDefault();
-    axios({
-      method: "POST",
-      url:"http://localhost:3002/send",
-      data:  this.state
-    }).then((response)=>{
-      if (response.data.status === 'success'){
-        alert("Message Sent.");
-        this.resetForm()
-      }else if(response.data.status === 'fail'){
-        alert("Message failed to send.")
-      }
-    })
-  }
 
-  resetForm(){
+`;
 
-    this.setState({name: '', email: '', message: ''})
- }
 
-  render() {
-	return(
-  	<div className="App">
-  	<form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
-  	<div className="form-group">
-      	<label htmlFor="name">Name</label>
-      	<input type="text" className="form-control" id="name" value={this.state.name} onChange={this.onNameChange.bind(this)} />
-  	</div>
-  	<div className="form-group">
-      	<label htmlFor="exampleInputEmail1">Email address</label>
-      	<input type="email" className="form-control" id="email" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
-  	</div>
-  	<div className="form-group">
-      	<label htmlFor="message">Message</label>
-      	<textarea className="form-control" rows="5" id="message" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
-  	</div>
-  	<button type="submit" className="btn btn-primary">Submit</button>
-  	</form>
-  	</div>
-	);
-  }
 
-  onNameChange(event) {
-	this.setState({name: event.target.value})
-  }
 
-  onEmailChange(event) {
-	this.setState({email: event.target.value})
-  }
 
-  onMessageChange(event) {
-	this.setState({message: event.target.value})
-  }
-}
+ const Jumboo = () => (
+  <Styles>
+ <div className="botdy">
+<svg width="380px" height="500px" viewBox="0 0 837 1045" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/1999/xlink" xmlns="http://www.bohemiancoding.com/sketch/ns">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch="MSPage">
+        <path d="M353,9 L626.664028,170 L626.664028,487 L353,642 L79.3359724,487 L79.3359724,170 L353,9 Z" id="Polygon-1" stroke="#007FB2" stroke-width="6" sketch="MSShapeGroup"></path>
+        <path d="M78.5,529 L147,569.186414 L147,648.311216 L78.5,687 L10,648.311216 L10,569.186414 L78.5,529 Z" id="Polygon-2" stroke="#EF4A5B" stroke-width="6" sketch="MSShapeGroup"></path>
+        <path d="M773,186 L827,217.538705 L827,279.636651 L773,310 L719,279.636651 L719,217.538705 L773,186 Z" id="Polygon-3" stroke="#795D9C" stroke-width="6" sketch="MSShapeGroup"></path>
+        <path d="M639,529 L773,607.846761 L773,763.091627 L639,839 L505,763.091627 L505,607.846761 L639,529 Z" id="Polygon-4" stroke="#F2773F" stroke-width="6" sketch="MSShapeGroup"></path>
+        <path d="M281,801 L383,861.025276 L383,979.21169 L281,1037 L179,979.21169 L179,861.025276 L281,801 Z" id="Polygon-5" stroke="#36B455" stroke-width="6" sketch="MSShapeGroup"></path>
+    </g>
+</svg>
+</div>
+<div className="message-box">
+  <h1>404</h1>
+  <p>Page not found</p>
+  <div className="buttons-con">
+    <div className="action-link-wrap">
+      <a onclick="history.back(-1)" className="link-button link-back-button">Go Back</a>
+      <a href="/" classNameName="link-button">Go to Home Page</a>
+    </div>
+  </div>
+</div>
+  </Styles>
 
-export default Skills
+
+
+)
+export default Jumboo;
+
+
+

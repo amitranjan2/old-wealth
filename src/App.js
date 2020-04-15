@@ -5,7 +5,7 @@ import Login from './components/Login';
 import Navigation from './components/Navigation';
 import Api from './components/Api';
 import Search from './components/Search';
-import { BrowserRouter as Router,Switch,Route  }from 'react-router-dom';
+import { BrowserRouter as Router,Switch,Route,Redirect  }from 'react-router-dom';
 
 import Navbody from './components/Navbody';
 import Jumboo from './components/Jumbo';
@@ -20,9 +20,12 @@ import Learn from './components/Learn';
 import Skills from './components/Skills';
 import Cardforchart from './components/Card';
 import CardforBook from './components/CardforBook';
+import PostForm from './components/Createblog';
 
 
 import TabComponent from './components/Tab';
+import CreateBlog from './components/Create';
+import LatContact from './components/Latestcontact';
 // or
 
 // import { Button } from 'react-bootstrap';
@@ -70,14 +73,15 @@ function App({ match }) {
     <Route path="/about">
       {/* <Login />
       <Search /> */}
-      <Contact />
-      <Footer />
+      <LatContact />
+
     </Route>
 
     <Route exact path="/data">
- <Skills/>
+ <CreateBlog/>
     </Route>
-
+    {/* <Route  exact path="/admin"component={Skills} /> */}
+    {/* <Redirect from="*" to="/" /> */}
     <Route path="/Books">
     <CardforBook/>
     <Footer />
@@ -89,12 +93,15 @@ function App({ match }) {
     </Route>
     <Route path="/Chart">
     <Cardforchart/>
-    {/* <Footer /> */}
+    <Footer />
     </Route>
 
     <Route path="/movie">
     <Movies />
     <Footer />
+    </Route>
+    <Route path="/lat">
+  <LatContact/>
     </Route>
 
 

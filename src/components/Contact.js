@@ -105,17 +105,18 @@ const Styles = styled.div`
       {/* <h1>
   <a href="#">
     Ten Ways to Have Yourself a Merry Little Christmas
-  </a>
+  </a>      <p className="tv-blue-background-block__text i-align_center">I started my journey of Engineering in 2016 and developed deep interest in software development. Due to my interest in stock market I built this platform to help beginners ,student and many more to start their journey in stock market </p>
+
 </h1> */}
       <p className="tv-blue-background-block__text"> My name is Amit Ranjan. I am a final year Computer Science and Engineering Student at the Indian Institute of Technology Patna (IIT P). </p>
       <p className="tv-blue-background-block__text i-align_center">I started my journey of Engineering in 2016 and developed deep interest in software development. Due to my interest in stock market I built this platform to help beginners ,student and many more to start their journey in stock market </p>
 
-      <p className="tv-blue-background-block__text i-align_center"><h2>PROGRAMMING SKILLS</h2> <br></br>
+<p className="tv-blue-background-block__text i-align_center"><h2>PROGRAMMING SKILLS</h2> <br></br>
 
 C • C++ • Javascript• CSS • PHP
 
 • Ruby on Rails,•React Js • API<br></br>Data Structure and Algorithms <br></br>Assembly
-Database • MySQL</p>
+Database • MySQL</p>    
 
 
 </div>
@@ -125,7 +126,7 @@ BIZONGO | SOFTWARE ENGINEERING INTERN<br></br>
  May 2019 – July 2019 | Mumbai, India  <br></br>
 • Integrated Google Login(Domain: bizongo.com only) ,Sign Up and Single Sign
 
-On into their four different apps using React Js , Ruby on Rails,OAUTH , <br></br>
+On into their four different apps using React Js, Ruby on Rails, OAUTH<br></br>
 • Written API to fetch details from darwinapi to assign roles to employees.
 
 </p>

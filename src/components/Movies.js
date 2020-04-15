@@ -142,6 +142,7 @@ p {
 
 margin:150px auto;
 
+
   }
 
 }
@@ -159,6 +160,7 @@ margin:150px auto;
 
   margin-right: 38px;
   margin-bottom: 38px;
+  background-color: aliceblue;
 }
 
 .btn-success {
