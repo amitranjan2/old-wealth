@@ -127,7 +127,7 @@ function LandingPage() {
     const [Blogs, setBlogs] = useState([])
 
     useEffect(() => {
-        axios.get('http://localhost:5000/users/')
+        axios.get('https://wealthfirst-api.herokuapp.com/users')
             .then(response => {
                 if (response.data) {
                     console.log(response.data)
@@ -139,17 +139,7 @@ function LandingPage() {
     }, [])
 
 
-    // componentDidMount() {
-    //     axios.get('http://localhost:5000/exercises/')
-    //       .then(response => {
-    //         this.setState({ exercises: response.data })
-    //       })
-    //       .catch((error) => {
-    //         console.log(error);
-    //       })
-    //   }
-
-
+  
         return (
             <Styles>
 <div className="inside">
@@ -191,71 +181,7 @@ function LandingPage() {
           </Styles>
         );
 
-//         const renderCards = Blogs.map((item, index) => {
 
-
-
-//             return (
-
-    //             <Card>
-    // <Card.Img variant="top" src={item.photo}/>
-    //   <Card.Body>
-    //     <Card.Title>"The Intelligent Investor"</Card.Title>
-    //     <Card.Text>
-    //     Before his death, "The Intelligent Investor" author Benjamin Graham was a renowned professor known as the godfather of investing, and Jason Zweig,
-    //      The Wall Street Journal columnist, adds in some commentary in this revised edition. This book takes a different approach from other investing books,
-    //       although it’s not without positive encouragement. It won’t tell you how to make millions, but rather how not to lose your shirt.
-    //       The authors impart must-read basics to get you started in investing and keep you going for a long time, from recommended strategies and how to analyze stocks to a comprehensive history lesson on the stock market.
-    //       Graham published the first edition of this book in 1949, and Buffett himself has called that version “the best book on investing ever written.”
-    //     </Card.Text>
-    //   </Card.Body>
-    //   <Card.Footer>
-    //     <small className="text-muted"></small>
-    //   </Card.Footer>
-
-    // </Card>
-
-//             )
-//         })
-//         return (
-//             <Styles>
-
-{/* <div className="inside">
-    <div className="insidie"> */}
-//             <div className="posts-container">
-//               <center>
-//                 <h1>All Posts</h1>
-//                 <hr />
-//               </center>
-//               <div style={{ width: '100%', margin: '3rem auto' }}>
-
-//                     <React.Fragment >
-//                    <CardDeck>
-
-
-// {renderCards}
-
-
-// </CardDeck>
-//                     </React.Fragment>
-//                   ))
-//                 ) : (
-//                   <div>Loading...</div>
-//                 )}
-//               </div>
-//             </div>
-//             </div>
-//             </div>
-//             </Styles>
-//           );
-
-
-
-
-
-
-
-//       };
 
 
               }

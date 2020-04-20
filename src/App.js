@@ -13,14 +13,13 @@ import Footer from './components/Footer';
 import Books from './components/Books';
 import Movies from './components/Movies';
 import Contact from './components/Contact';
-import PostList from './components/Youtube';
 import Results from './components/Learn';
 import Apper from './components/Video';
 import Learn from './components/Learn';
-import Skills from './components/Skills';
+
 import Cardforchart from './components/Card';
 import CardforBook from './components/CardforBook';
-import PostForm from './components/Createblog';
+
 
 
 import TabComponent from './components/Tab';
@@ -28,7 +27,7 @@ import CreateBlog from './components/Create';
 import LatContact from './components/Latestcontact';
 import BlogPage from './components/Blogpage';
 import gridExamplesPage from './components/Main';
-import CardExample from './components/Main';
+
 import Main from './components/Main';
 import FooterPage from './components/Blogpage';
 import LandingPage from './components/Landpage';
@@ -55,12 +54,7 @@ function App({ match }) {
     <Route exact path="/">
     <TabComponent />
     <Main/>
-    {/* <Jumboo /> */}
 
-
-
-    {/* <Footer/> */}
-    {/* <Jumboo /> */}
 
     </Route>
 
@@ -92,8 +86,7 @@ function App({ match }) {
     <Route exact path="/data">
  <CreateBlog/>
     </Route>
-    {/* <Route  exact path="/admin"component={Skills} /> */}
-    {/* <Redirect from="*" to="/" /> */}
+
     <Route path="/Books">
     <CardforBook/>
     <Footer />

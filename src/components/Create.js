@@ -125,7 +125,7 @@ export default class CreateUser extends Component {
         photo:this.state.photo,
       }
 
-        axios.post('http://localhost:5000/users/add', users)
+        axios.post('https://wealthfirst-api.herokuapp.com/users/add', users)
         .then(res => console.log(res.data));
 
       this.setState({
