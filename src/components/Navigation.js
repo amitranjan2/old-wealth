@@ -2,9 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 // import './Login.css';
 // or
-
+import Favicon from 'react-favicon';
 // import { Button } from 'react-bootstrap';
 // import Button from 'react-bootstrap/Button'
+import amit from '../assests/favicon.ico';
 
 import { BrowserRouter as Router, Link, NavLink, Redirect, Prompt} from 'react-router-dom';
 import { Navbar, Nav, NavDropdown, Form,  FormControl, Button, Table,Dropdown} from 'react-bootstrap';
@@ -81,6 +82,9 @@ function Navigation() {
 
 
   <Styles>
+    <div>
+      <Favicon url={amit} />
+    </div>
 
 
         <Navbar expand="lg" className="bg" >
