@@ -19,7 +19,7 @@ const Styles = styled.div`
 }
 
   .navbar {
-    background-color: white;
+    background-color:#335eea08;
   }
 .nav-link{
 
@@ -43,6 +43,7 @@ const Styles = styled.div`
 
   a, .navbar-brand, .navbar-nav .nav-link . NavDropdown{
     color: #fff;
+    padding-right: 0.8rem;
 
     &:hover {
       color: pink;
@@ -58,6 +59,7 @@ const Styles = styled.div`
     display: block;
     width: 100%;
     padding: .25rem 1.5rem;
+
     clear: both;
     font-weight: 400;
     color: #212529;
@@ -110,14 +112,16 @@ function Navigation() {
 
                 </NavDropdown>
 
+                <Nav.Link href="/tradingblog">Trading Blog</Nav.Link>
 
-                <NavDropdown title="Important Link" id="collasible-nav-dropdown">
+
+                {/* <NavDropdown title="Important Link" id="collasible-nav-dropdown">
         <NavDropdown.Item href="https://www.npmjs.com/package/reactstrap">Money control</NavDropdown.Item>
         <NavDropdown.Item href="https://www1.nseindia.com/index_nse.htm">NSE India</NavDropdown.Item>
         <NavDropdown.Item href="https://www.cashoverflow.in/best-demat-trading-account-india">Demat Account</NavDropdown.Item>
         <NavDropdown.Divider />
         <NavDropdown.Item href="https://www.screener.in">Screener.in</NavDropdown.Item>
-      </NavDropdown>
+      </NavDropdown> */}
               </Nav>
 
 

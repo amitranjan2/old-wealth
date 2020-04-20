@@ -16,6 +16,8 @@ import wallstreet from '../assests/wallstreet.jpg';
 import equity from '../assests/equity.jpg';
 import tobigtofall from '../assests/tobigtofall.jpg';
 import boiler from '../assests/boiler.jpg';
+import insidejobs from '../assests/insidejobs.jpeg';
+
 import rogue from '../assests/rogue.jpg';
 import styled from 'styled-components';
 
@@ -27,17 +29,8 @@ const Styles = styled.div`
     border-bottom: 1px solid rgba(0,0,0,.125);
   background-color: cadetblue
 }
-.xx {
-    background: url(${Invest}) no-repeat fixed bottom;
-    background-size: 100% 100%;
-
-    color: #efefef;
 
 
-
-
-    position: relative;
-  }
 a:hover {
   color: blue;
   text-decoration: none;
@@ -58,6 +51,7 @@ a{
     min-height: 1px;
     padding: 1.25rem;
     background-color: #223343;
+
 }
 .h3, h3 {
     font-size: 1.75rem;
@@ -133,6 +127,42 @@ p {
 
 	z-index: 1;
 }
+
+@media (min-width: 978px) {
+
+  .insidie{
+
+    transition: transform .2s; /* Animation */
+
+
+    display: flex;
+    flex-direction: column;
+
+    width:85%;position: relative;
+
+margin:150px auto;
+
+
+  }
+
+}
+.card {
+
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  margin-left: 30px;
+
+  margin-right: 38px;
+  margin-bottom: 38px;
+  background-color: aliceblue;
+}
+
 .btn-success {
     /* color: #fff; */
     background-color:
@@ -145,8 +175,139 @@ p {
 `;
 
 
+
+// const Styles = styled.div`
+// .card-title {
+//   margin-bottom: .75rem;
+//   font-weight: 600;
+// }
+
+// .post-card {
+//     -webkit-box-flex: 1;
+//     -ms-flex: 1 1 300px;
+//     flex: 1 1 300px;
+//     -webkit-box-orient: vertical;
+//     -webkit-box-direction: normal;
+//     -ms-flex-direction: column;
+//     flex-direction: column;
+//     overflow: hidden;
+//     margin: 0 20px 40px;
+//     min-height: 300px;
+//     background: #fff 50%;
+//     background-size: cover;
+//     border-radius: 5px;
+//     -webkit-box-shadow: rgba(39,44,49,.06) 8px 14px 38px, rgba(39,44,49,.03) 1px 3px 8px;
+//     box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
+//     -webkit-transition: all .5s ease;
+//     transition: all .5s ease;
+// }
+
+
+
+// @media (min-width: 978px) {
+
+//   .insidie{
+
+//     transition: transform .2s; /* Animation */
+
+
+//     display: flex;
+//     flex-direction: column;
+
+//     width:85%;
+// margin:150px auto;
+
+//   }
+
+// }
+
+// .inner{
+// width: 50%;
+// height: 50%;
+// top: 25%;
+// margin: 0 auto;
+// position: relative;
+// background:orange;
+// }
+
+// .card {
+//   position: relative;
+//   display: flex;
+//   flex-direction: column;
+//   min-width: 0;
+//   word-wrap: break-word;
+//   background-color: #fff;
+//   background-clip: border-box;
+//   border: 1px solid rgba(0,0,0,.125);
+//   border-radius: .25rem;
+//   margin-left: 30px;
+//   margin-bottom: auto;
+//   margin-right: 38px;
+// }
+
+// .h1, h1 {
+//   font-size: 1.25rem;
+//   color: black;
+// }
+
+
+//   .card:hover {
+
+//         cursor:pointer;
+//     }
+// .inside{
+//  height:100%;
+//   margin:0 auto;
+//   overflow:hidden;
+//   float:left;
+//   background-color:#F8F9FB;
+
+// }
+// a {
+//   color: black;
+//   text-decoration: none;
+//   background-color: transparent;
+// }
+// .h3, h3 {
+//   font-size: 1.75rem;
+//   text-align: -webkit-center;
+//   color: black;
+//   font-weight: bold;
+// }
+// .card-footer {
+//   padding: .75rem 1.25rem;
+//    background-color: white;
+//   /* border-top: 1px solid rgba(0,0,0,.125); */
+// }
+// `;
+
+/*.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  margin-left: 30px;
+  margin-bottom: auto;
+  margin-right: 38px;
+}
+*/
+
+
+
+
+
+
 const Movies = () => (
     <Styles>
+
+
+<div className="inside">
+    <div className="insidie">
 <CardGroup>
 <Card >
     <Card.Img variant="top" src={bigshort} />
@@ -188,7 +349,30 @@ const Movies = () => (
     </Card.Footer>
   </Card>
 
-  <Card>
+
+
+
+</CardGroup>
+
+
+
+
+<CardGroup>
+<Card>
+    <Card.Img variant="top" src={equity} />
+    <Card.Body>
+      <Card.Title>Equity</Card.Title>
+      <Card.Text>
+      Naomi Bishop is an investment banker determined to overcome a previous stain to her professional reputation, which is a challenge in the male dominated financial sector she works in. As Naomi in that spirit makes her move managing a burgeoning new tech IPO, she has to endure not only the condescension of her colleagues, but also her imperious client even as troubling new developments cloud the venture's future.
+      </Card.Text>
+
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">   <Button href=" https://world4ufree.yt/film/equity-8102/"variant="success">Watch online for free</Button></small>
+    </Card.Footer>
+  </Card>
+
+<Card>
     <Card.Img variant="top" src={wallstreet} />
     <Card.Body>
       <Card.Title>Wall Street: Money Never Sleeps</Card.Title>
@@ -201,11 +385,33 @@ const Movies = () => (
   </Card>
 
 
+
+  <Card >
+    <Card.Img variant="top" src={insidejobs} />
+    <Card.Body>
+      <Card.Title>Too Big to Fail</Card.Title>
+      <Card.Text>
+      Inside Job' provides a comprehensive analysis of the global financial crisis of 2008, which at a cost over $20 trillion, caused millions of people to lose their jobs and homes in the worst recession since the Great Depression, and nearly resulted in a global financial collapse.
+       Through exhaustive research and extensive interviews with key financial insiders, politicians, journalists, and academics, the film traces the rise of a rogue industry which has corrupted politics, regulation, and academia.
+
+
+        </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">  <Button href="https://world4ufree.yt/film/inside-job-487/" variant="success">Watch online for free</Button></small>
+    </Card.Footer>
+  </Card>
+
 </CardGroup>
 
 
+
+
 <CardGroup>
-<Card >
+
+
+
+  <Card >
     <Card.Img variant="top" src={tobigtofall} />
     <Card.Body>
       <Card.Title>Too Big to Fail</Card.Title>
@@ -215,19 +421,6 @@ const Movies = () => (
     </Card.Body>
     <Card.Footer>
       <small className="text-muted">  <Button href="https://world4ufree.yt/film/too-big-to-fail-17395/" variant="success">Watch online for free</Button></small>
-    </Card.Footer>
-  </Card>
-  <Card>
-    <Card.Img variant="top" src={equity} />
-    <Card.Body>
-      <Card.Title>Equity</Card.Title>
-      <Card.Text>
-      Naomi Bishop is an investment banker determined to overcome a previous stain to her professional reputation, which is a challenge in the male dominated financial sector she works in. As Naomi in that spirit makes her move managing a burgeoning new tech IPO, she has to endure not only the condescension of her colleagues, but also her imperious client even as troubling new developments cloud the venture's future.
-      </Card.Text>
-
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">   <Button href=" https://world4ufree.yt/film/equity-8102/"variant="success">Watch online for free</Button></small>
     </Card.Footer>
   </Card>
   <Card>
@@ -259,7 +452,8 @@ This film shows you how little governance and risk management there was (and sti
 
 
 </CardGroup>
-
+</div>
+  </div>
     </Styles>
 
 
