@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import moment from 'moment';
 import axios from 'axios';
 import styled from 'styled-components';
+import Image from 'react-bootstrap/Image'
 import { BrowserRouter as Router, Link, NavLink, Redirect, Prompt} from 'react-router-dom';
 import { Navbar, Nav, NavDropdown, Form,  FormControl, Button, Table,Dropdown,Card,CardDeck} from 'react-bootstrap';
 const Styles = styled.div`
@@ -90,12 +91,25 @@ const Styles = styled.div`
    height:100%;
     margin:0 auto;
     overflow:hidden;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
     float:left;
     background-color:#F8F9FB;
     padding-left: 2rem;
     padding-right: 2rem;
 
+
+
+
   }
+  .card-footer {
+    padding: .75rem 1.25rem;
+    text-align: end;
+    background-color: rgba(0,0,0,.03);
+    border-top: 1px solid rgba(0,0,0,.125);
+}
   a {
     color: black;
     text-decoration: none;
@@ -121,6 +135,33 @@ const Styles = styled.div`
      background-color: white;
     /* border-top: 1px solid rgba(0,0,0,.125); */
   }
+  .contain{
+    height:100%;
+    margin:0 auto;
+    display: flex;
+    overflow:hidden;
+    float:left;
+    background-color:#F8F9FB;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .in{
+    height:100vh;
+    margin:0 auto;
+    display: flex;
+    overflow:hidden;
+    float:left;
+    background-color:#F8F9FB;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    z-index: -1;
+
+  }
+  .foot{
+    color:red;
+    font-weight: bolder;
+
+  }
   `;
 function LandingPage() {
 
@@ -139,17 +180,18 @@ function LandingPage() {
     }, [])
 
 
-  
+
         return (
             <Styles>
 <div className="inside">
     <div className="insidie">
           <div className="posts-container">
+
+            <div className="card-container">
             <center>
-              <h1 className="blue">All Posts</h1>
+              <h1 className="blue">Trading Blogs</h1>
               <hr />
             </center>
-            <div className="card-container">
               {Blogs.length !== 0 ? (
                 Blogs.map(item => (
                   <React.Fragment >
@@ -162,19 +204,70 @@ function LandingPage() {
         </Card.Text>
       </Card.Body>
       <Card.Footer>
-        <large className="text-muted"> <span> {moment(item.createdAt).format("MMM Do YY")} </span></large>
+        <large className="text-muted"> <span className="foot"> {moment(item.createdAt).format("MMM Do YY")} </span></large>
       </Card.Footer>
    <br></br>
     </Card>
                   </React.Fragment>
                 ))
               ) : (
-                <center>
-                <h1>Loading...</h1>
-                <hr />
-              </center>
+
+                  <div className="in">
+                <h3>Please wait Loading...</h3>
+
+
+
+
+
+                <div class="contain">
+  <svg xmlns="http://www.w3.org/2000/svg" width="100px" height="100px" viewBox="0 0 100 100">
+    <circle cx="30" cy="50" fill="#e40001">
+      <animate attributeName="r" values="0;5;0" dur="1.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="50" cy="50" fill="#e40001">
+      <animate attributeName="r" values="0;5;0" dur="1.2s" begin="0.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="70" cy="50" fill="#e40001">
+      <animate attributeName="r" values="0;5;0" dur="1.2s" begin="0.8s" repeatCount="indefinite"/>
+    </circle>
+  </svg>
+
+  {/* <svg xmlns="http://www.w3.org/2000/svg" width="100px" height="100px" viewBox="0 0 100 100">
+    <path d="M 50,50 L 33,60.5 a 20 20 -210 1 1 34,0 z" fill="#e40001">
+      <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="1.2s" repeatCount="indefinite"/>
+    </path>
+      <circle cx="50" cy="50" r="16" fill="#424242"></circle>
+    </svg> */}
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="100px" height="100px" viewBox="0 0 100 100">
+    <rect y="25" width="10" height="50" rx="4" ry="4" fill="#e40001">
+      <animate attributeName="x" values="10;100" dur="1.2s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 10 70" to="-60 100 70" dur="1.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="1.2s" repeatCount="indefinite"/>
+    </rect>
+    <rect y="25" width="10" height="50" rx="4" ry="4" fill="#e40001">
+      <animate attributeName="x" values="10;100" dur="1.2s" begin="0.4s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 10 70" to="-60 100 70" dur="1.2s" begin="0.4s" repeatCount="indefinite"/>
+     <animate attributeName="opacity" values="0;1;0" dur="1.2s" begin="0.4s" repeatCount="indefinite"/>
+    </rect>
+    <rect y="25" width="10" height="50" rx="4" ry="4" fill="#e40001">
+      <animate attributeName="x" values="10;100" dur="1.2s" begin="0.8s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 10 70" to="-60 100 70" dur="1.2s" begin="0.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="1.2s" begin="0.8s" repeatCount="indefinite"/>
+    </rect>
+  </svg>
+</div>
+
+{/*
+<Image src="https://pickmywork.com/static/media/wave.a03b7bb1.svg" fluid /> */}
+{/* <img src="https://pickmywork.com/static/media/wave.a03b7bb1.svg" alt="wave" class="wave"></img> */}
+
+
+                </div>
+
+
               )}
-            </div>
+           </div>
           </div>
           </div>
           </div>
