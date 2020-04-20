@@ -26,6 +26,12 @@ import PostForm from './components/Createblog';
 import TabComponent from './components/Tab';
 import CreateBlog from './components/Create';
 import LatContact from './components/Latestcontact';
+import BlogPage from './components/Blogpage';
+import gridExamplesPage from './components/Main';
+import CardExample from './components/Main';
+import Main from './components/Main';
+import FooterPage from './components/Blogpage';
+import LandingPage from './components/Landpage';
 // or
 
 // import { Button } from 'react-bootstrap';
@@ -48,12 +54,18 @@ function App({ match }) {
 
     <Route exact path="/">
     <TabComponent />
-    <Jumboo />
-    <Footer />
+    <Main/>
+    {/* <Jumboo /> */}
+
+
+
+    {/* <Footer/> */}
+    {/* <Jumboo /> */}
+
     </Route>
 
-    <Route exact path="/cbook">
-  <CardforBook/>
+    <Route exact path="/tradingblog">
+  <LandingPage/>
     </Route>
 
 
@@ -101,7 +113,8 @@ function App({ match }) {
     <Footer />
     </Route>
     <Route path="/lat">
-  <LatContact/>
+  {/* <BlogPage/> */}
+  <Main/>
     </Route>
 
 

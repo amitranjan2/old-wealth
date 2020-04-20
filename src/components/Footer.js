@@ -52,6 +52,7 @@ const Styles = styled.div`
   webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    flex: 1 1 auto;
 }
 
 
