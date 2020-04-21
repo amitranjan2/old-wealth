@@ -148,16 +148,12 @@ const Styles = styled.div`
 
 @media (max-width: 576px){
 .col{      height: 70vh;
-    flex-basis: 0;
-    flex-grow: 1;
+
     max-width: 100%;
     background-color: black;
+    margin-left: 10px;
+    margin-right: 10px
 
-    position: relative;
-
-    left: 0;
-    right: 0;
-    margin: auto;
 
     }
     }
