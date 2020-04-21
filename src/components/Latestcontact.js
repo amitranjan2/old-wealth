@@ -250,7 +250,7 @@ const Styles = styled.div`
 </div>
     </div>
 </div>
-<Container>
+{/* <Container>
   <Row>
     <Col>
 
@@ -274,7 +274,7 @@ On into their four different apps using React Js, Ruby on Rails, OAUTH<br></br>
 
   </Row>
 
-</Container>
+</Container> */}
 
 <div className="ex">
 
