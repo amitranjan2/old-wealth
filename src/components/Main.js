@@ -81,7 +81,7 @@ const Styles = styled.div`
   position: relative;
 
 }
-@media (min-width: 576px){
+
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   font-weight: 500;
@@ -89,7 +89,8 @@ const Styles = styled.div`
   color: #335eea!important;
 
 }
-}
+
+
 .img{
 
 
@@ -227,6 +228,19 @@ const Styles = styled.div`
     background-color: black;
 
   }
+  .tv-blue-background-block__text {
+    font-size: 14px;
+    margin-bottom: 12px;
+
+
+    line-height: 1.8;
+    color: black;
+    font-size: 22px;
+    font-weight:bold;
+
+
+
+  }
 `;
 
 
@@ -263,10 +277,11 @@ const Styles = styled.div`
 
     <div class="right">
 
-        <p className="p4">Wealth First is the perfect platform for beginners, students, and also for intermediate to learn everything about share market, investing, and trading.
+        <p className="tv-blue-background-block__text">Wealth First is the perfect platform for beginners, students, and also for intermediate to learn everything about share market, investing, and trading.
  <br></br>Here, you will find Stock market-related books, movies, Various best rank You tube trading Channels, and many more. .....</p>
 
- <p className="p4">You can also add your favourites books ,youtube channels and movies.</p>
+
+ <p className="tv-blue-background-block__text">You can also add your favourites books ,youtube channels and movies.</p>
 </div>
     </div>
 </div>
