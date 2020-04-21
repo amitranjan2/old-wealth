@@ -106,6 +106,17 @@ const Styles = styled.div`
     margin: 10px;
     padding:5px;
     float:left;
+    // background-color: black;
+
+
+
+}
+.ex{
+  margin: 10px;
+  padding:5px;
+  float:right;
+  background-color: black;
+
 
 }
 .img-fluid {
@@ -264,6 +275,22 @@ On into their four different apps using React Js, Ruby on Rails, OAUTH<br></br>
   </Row>
 
 </Container>
+
+<div className="ex">
+
+<p className="tv">     EXPERIENCE...</p> <br></br>
+<p className="tv-blue">
+BIZONGO | SOFTWARE ENGINEERING INTERN<br></br>
+ May 2019 – July 2019 | Mumbai, India  <br></br>
+• Integrated Google Login(Domain: bizongo.com only) ,Sign Up and Single Sign
+
+On into their four different apps using React Js, Ruby on Rails, OAUTH<br></br>
+• Written API to fetch details from darwinapi to assign roles to employees.
+
+
+
+</p>
+</div>
 <div className="centered-div">
 
 <p className="tv">    Programming Skills..</p> <br></br>
