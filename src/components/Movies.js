@@ -319,7 +319,12 @@ const Movies = () => (
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-      <small className="text-muted">  <Button href="https://world4ufree.yt/film/the-big-short-6897/" variant="success">Watch online for free</Button></small>
+      {/* <small className="text-muted">  <Button href="https://world4ufree.yt/film/the-big-short-6897/" variant="success">Watch online for free</Button></small> */}
+
+      <small className="text-muted">    <a href="https://world4ufree.yt/film/the-big-short-6897/" target="_blank">
+    <Button   variant="success">Watch online for free</Button>
+                  </a></small>
+
     </Card.Footer>
   </Card>
   <Card>
@@ -333,7 +338,11 @@ const Movies = () => (
 
     </Card.Body>
     <Card.Footer>
-      <small className="text-muted">   <Button href=" https://world4ufree.yt/watch/margin-call-702/?ep=30867"variant="success">Watch online for free</Button></small>
+      {/* <small className="text-muted">   <Button href=" https://world4ufree.yt/watch/margin-call-702/?ep=30867"variant="success">Watch online for free</Button></small> */}
+
+      <small className="text-muted">    <a href=" https://world4ufree.yt/watch/margin-call-702/?ep=30867" target="_blank">
+    <Button   variant="success">Watch online for free</Button>
+                  </a></small>
     </Card.Footer>
   </Card>
   <Card>
@@ -345,7 +354,9 @@ const Movies = () => (
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-    <small className="text-muted">   <Button  href="https://world4ufree.yt/film/the-wolf-of-wall-street-68/" variant="success">Watch online for free</Button></small>
+    <small className="text-muted">    <a href="https://world4ufree.yt/film/the-wolf-of-wall-street-68/" target="_blank">
+    <Button   variant="success">Watch online for free</Button>
+                  </a></small>
     </Card.Footer>
   </Card>
 
@@ -368,7 +379,11 @@ const Movies = () => (
 
     </Card.Body>
     <Card.Footer>
-      <small className="text-muted">   <Button href=" https://world4ufree.yt/film/equity-8102/"variant="success">Watch online for free</Button></small>
+      {/* <small className="text-muted">   <Button href=" https://world4ufree.yt/film/equity-8102/"variant="success">Watch online for free</Button></small> */}
+
+      <small className="text-muted">    <a  href=" https://world4ufree.yt/film/equity-8102/" target="_blank">
+    <Button   variant="success">Watch online for free</Button>
+                  </a></small>
     </Card.Footer>
   </Card>
 
@@ -380,7 +395,10 @@ const Movies = () => (
       As the global economy teeters on the brink of disaster, a young Wall Street trader partners with disgraced former Wall Street corporate raider Gordon Gekko on a two-tiered mission: To alert the financial community to the coming doom, and to find out who was responsible for the death of the young trader's mentor.      </Card.Text>
     </Card.Body>
     <Card.Footer>
-    <small className="text-muted">   <Button  href="https://world4ufree.yt/film/wall-street-money-never-sleeps-1097/" variant="success">Watch online for free</Button></small>
+    <small className="text-muted">    <a  href="https://world4ufree.yt/film/wall-street-money-never-sleeps-1097/"  target="_blank">
+    <Button   variant="success">Watch online for free</Button>
+                  </a></small>
+    {/* <small className="text-muted">   <Button  href="https://world4ufree.yt/film/wall-street-money-never-sleeps-1097/" variant="success">Watch online for free</Button></small> */}
     </Card.Footer>
   </Card>
 
@@ -398,7 +416,10 @@ const Movies = () => (
         </Card.Text>
     </Card.Body>
     <Card.Footer>
-      <small className="text-muted">  <Button href="https://world4ufree.yt/film/inside-job-487/" variant="success">Watch online for free</Button></small>
+      {/* <small className="text-muted">  <Button href="https://world4ufree.yt/film/inside-job-487/" variant="success">Watch online for free</Button></small> */}
+      <small className="text-muted">    <a  href="https://world4ufree.yt/film/inside-job-487/"  target="_blank">
+    <Button   variant="success">Watch online for free</Button>
+                  </a></small>
     </Card.Footer>
   </Card>
 
@@ -420,7 +441,10 @@ const Movies = () => (
       A close look behind the scenes, between late March and mid-October, 2008: we follow Richard Fuld's benighted attempt to save Lehman Brothers; conversations among Hank Paulson (the Secretary of the Treasury), Ben Bernanke (chair of the Federal Reserve), and Tim Geithner (president of the New York Fed) as they seek a private solution for Lehman's; and, back-channel negotiations among Paulson, Warren Buffet, investment bankers, a British regulator, and members of Congress as almost all work to save the U.S. economy.      </Card.Text>
     </Card.Body>
     <Card.Footer>
-      <small className="text-muted">  <Button href="https://world4ufree.yt/film/too-big-to-fail-17395/" variant="success">Watch online for free</Button></small>
+      {/* <small className="text-muted">  <Button href="https://world4ufree.yt/film/too-big-to-fail-17395/" variant="success">Watch online for free</Button></small> */}
+      <small className="text-muted">    <a  href="https://world4ufree.yt/film/too-big-to-fail-17395/" target="_blank">
+    <Button   variant="success">Watch online for free</Button>
+                  </a></small>
     </Card.Footer>
   </Card>
   <Card>
@@ -431,7 +455,11 @@ const Movies = () => (
       Seth Davis is a college dropout running an illegal casino from his rented apartment. Driven by his domineering fathers disapproval at his illegitimate existence and his desire for serious wealth, Seth suddenly finds himself seduced by the opportunity to interview as a trainee stock broker from recent acquaintance Greg (Nicky Katt). Walking into the offices of JT Marlin, a small time brokerage firm on the outskirts of New York - Seth gets an aggressive cameo performance from Jay (Ben Affleck) that sets the tone for a firm clearly placing money above all else.      </Card.Text>
     </Card.Body>
     <Card.Footer>
-    <small className="text-muted">   <Button  href="https://world4ufree.yt/film/boiler-room-2323/" variant="success">Watch online for free</Button></small>
+    {/* <small className="text-muted">   <Button  href="https://world4ufree.yt/film/boiler-room-2323/" variant="success">Watch online for free</Button></small> */}
+
+    <small className="text-muted">    <a  href="https://world4ufree.yt/film/boiler-room-2323/" target="_blank">
+    <Button   variant="success">Watch online for free</Button>
+                  </a></small>
     </Card.Footer>
   </Card>
 
@@ -446,7 +474,10 @@ This film shows you how little governance and risk management there was (and sti
 </Card.Text>
  </Card.Body>
     <Card.Footer>
-    <small className="text-muted">   <Button  href="https://www.youtube.com/watch?v=SclDzvDWrds" variant="success">Watch online for free</Button></small>
+    {/* <small className="text-muted">   <Button  href="https://www.youtube.com/watch?v=SclDzvDWrds" variant="success">Watch online for free</Button></small> */}
+    <small className="text-muted">    <a  href="https://www.youtube.com/watch?v=SclDzvDWrds"  target="_blank">
+    <Button   variant="success">Watch online for free</Button>
+                  </a></small>
     </Card.Footer>
   </Card>
 

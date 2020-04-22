@@ -141,7 +141,7 @@ function Cardforchart() {
 <CardDeck>
 
 <Card >
-<a href="https://in.tradingview.com/">
+
 
   <Card.Img variant="top" src={tradeview} />
   <Card.Body>
@@ -152,13 +152,16 @@ function Cardforchart() {
     </Card.Text>
   </Card.Body>
   <Card.Footer>
-    <small className="text-muted"></small>
+
+  <small className="text-muted">    <a href="https://in.tradingview.com/" target="_blank">
+    <Button   variant="warning">Visit Website</Button>
+                  </a></small>
   </Card.Footer>
-  </a>
+
 </Card>
 
 <Card>
-<a href="https://in.investing.com/">
+
 
   <Card.Img variant="top" src={Investing } />
   <Card.Body>
@@ -169,12 +172,14 @@ function Cardforchart() {
     </Card.Text>
   </Card.Body>
   <Card.Footer>
-    <small className="text-muted"></small>
+  <small className="text-muted">    <a  href="https://in.investing.com/" target="_blank">
+    <Button   variant="warning">Visit Website</Button>
+                  </a></small>
   </Card.Footer>
-  </a>
+
 </Card>
 <Card>
-<a href="https://chartink.com/">
+{/* <a href="https://chartink.com/" target="blank"> */}
 
   <Card.Img variant="top" src={chartlink}/>
   <Card.Body>
@@ -186,9 +191,12 @@ function Cardforchart() {
     </Card.Text>
   </Card.Body>
   <Card.Footer>
-    <small className="text-muted"></small>
+
+    <small className="text-muted">    <a  href="https://chartink.com/" target="_blank">
+    <Button   variant="warning">Visit Website</Button>
+                  </a></small>
   </Card.Footer>
-  </a>
+  {/* </a> */}
 </Card>
 </CardDeck>
     </div>
