@@ -15,9 +15,7 @@ const Styles = styled.div`
     position:relative;
     z-index:99999;
   }
-  .bg {
-    background-color: white;
-}
+
 
   .navbar {
     background-color:#335eea08;
@@ -28,6 +26,15 @@ const Styles = styled.div`
   background: linear-gradient(130deg, $hoverBgColor 0%, $hoverBgColor2 100%);
       box-shadow: none;
 
+}
+
+.navbar-toggler {
+  padding: .25rem .75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color:aliceblue;
+  border: 1px solid #460e0e00;
+  border-radius: .25rem;
 }
   a, .navbar-brand, .navbar-nav .nav-link {
     color: black;
@@ -52,7 +59,7 @@ const Styles = styled.div`
   }
 
   .dropdown-menu {
-    background-color: #343a40;
+    background-color: ;
   }
   .dropdown-item {
     position: relative;
@@ -66,9 +73,11 @@ const Styles = styled.div`
     color: #212529;
     text-align: inherit;
     white-space: nowrap;
-    background-color: grey;
-
+    background-color: white;
+  }
 `;
+
+
 
 function Navigation() {
 
@@ -87,7 +96,7 @@ function Navigation() {
     </div>
 
 
-        <Navbar expand="lg" className="bg" >
+        <Navbar expand="lg"  >
           <Navbar.Brand to="/">Wealth First</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
@@ -130,6 +139,7 @@ function Navigation() {
 
 
                 <Button variant="outline-success" href="/about">About me</Button>
+
 
           </Navbar.Collapse>
         </Navbar>

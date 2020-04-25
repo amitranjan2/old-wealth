@@ -43,7 +43,7 @@ function App({ match }) {
 
   return (
 
-    
+
      <Router>
        <switch>
 
@@ -61,6 +61,7 @@ function App({ match }) {
     </Route>
 
     <Route exact path="/tradingblog">
+      
   <LandingPage/>
     </Route>
 

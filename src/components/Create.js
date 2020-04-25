@@ -114,9 +114,11 @@ export default class CreateUser extends Component {
         this.state.photo === ""
       ) {
         this.setState({ error: "Please enter all fields" });
-      } else if (!CheckImageUrl(this.state.photo)) {
-        this.setState({ error: "Please enter a valid image URL" });
-      } else {
+      }
+      //  else if (!CheckImageUrl(this.state.photo)) {
+      //   this.setState({ error: "Please enter a valid image URL" });
+      // }
+      else {
         this.setState({ error: "" });
 
     const users = {
