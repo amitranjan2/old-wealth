@@ -31,6 +31,7 @@ import gridExamplesPage from './components/Main';
 import Main from './components/Main';
 import FooterPage from './components/Blogpage';
 import LandingPage from './components/Landpage';
+import FeaturesPage from './components/Button';
 // or
 
 // import { Button } from 'react-bootstrap';
@@ -61,8 +62,9 @@ function App({ match }) {
     </Route>
 
     <Route exact path="/tradingblog">
-      
+
   <LandingPage/>
+  <FeaturesPage/>
     </Route>
 
 

@@ -36,7 +36,7 @@ class TabComponent extends Component {
                 <strong>
                   Youtube Channels
                   <br />
-                  Recoomended for Trading and Investing
+                  Recommended for Trading and Investing
                 </strong>
               </p>
               <span className="mdScreen" style={{ marginTop: '0.4rem' }}>

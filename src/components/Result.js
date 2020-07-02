@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
+import { Card, Avatar, Col, Typography, Row } from 'antd';
 const Styles = styled.div`
+
 .videoWrapper {
 
     position: relative;
@@ -19,8 +21,11 @@ const Styles = styled.div`
 function Result({ result }) {
 	return (
 		<Styles>
-    <div className="videoWrapper">
-		<iframe src={result} width="560" height="315"  frameborder="0" allowfullscreen></iframe>
+    <div className="">
+    <Row gutter={16}>
+    <iframe src={result} width="560" height="315"  frameborder="0" allowfullscreen></iframe>
+            </Row>
+
 		</div>
 		</Styles>
 

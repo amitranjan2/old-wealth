@@ -88,6 +88,7 @@ class Login extends React.Component {
 responseGoogle = (response) => {
   this.setState({
     isLoggedIn: true,
+    name:"amit",
 
 
   });
@@ -133,7 +134,7 @@ responseGoogle = (response) => {
 
     if (this.state.isLoggedIn) {
       fbContent = (
- <Apper />
+ <Apper res={this.name}/>
       );
     } else {
 

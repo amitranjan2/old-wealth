@@ -18,11 +18,15 @@ const Styles = styled.div`
 
 
   .navbar {
-    background-color:#335eea08;
+    background-color:white;
   }
 .nav-link{
 
-
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
   background: linear-gradient(130deg, $hoverBgColor 0%, $hoverBgColor2 100%);
       box-shadow: none;
 
@@ -36,11 +40,15 @@ const Styles = styled.div`
   border: 1px solid #460e0e00;
   border-radius: .25rem;
 }
-  a, .navbar-brand, .navbar-nav .nav-link {
-    color: black;
+  a, .navbar-nav .nav-link {
+    // color: black;
+    color: #0093fd;
+    font-weight: bold;
+
+
 
     &:hover {
-      color: red;
+      color: pink;
 
       -webkit-transform: scale(1.15);
       -ms-transform: scale(1.15);
@@ -52,11 +60,26 @@ const Styles = styled.div`
   a, .navbar-brand, .navbar-nav .nav-link . NavDropdown{
     color: #fff;
     padding-right: 0.8rem;
+    font-weight: bold;
 
     &:hover {
       color: pink;
     }
   }
+  .navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    color: #0093fd;
+    font-weight: bold;
+    &:hover {
+      color: pink;
+    }
+}
 
   .dropdown-menu {
     background-color: ;

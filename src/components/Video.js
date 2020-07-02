@@ -5,7 +5,7 @@ import Search from './Searchn'
 import Results from './Results'
 
 
-function Apper() {
+function Apper({result}) {
   const [state, setState] = useState({
     s: "",
     results: [],
@@ -112,7 +112,7 @@ function Apper() {
   return (
     <div className="App">
       <header>
-
+{result}
       </header>
       <main>
         <Search handleInput={handleInput} search={search} />

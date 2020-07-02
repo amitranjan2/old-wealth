@@ -1,42 +1,125 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
+import styled from 'styled-components';
+// import './Login.css';
+import Investing from '../assests/Investing.com.png';
+import tradeview from '../assests/tradingview.jpg';
+import chartlink from '../assests/chartlink.jpeg';
 
-const useStyles = makeStyles({
-  root: {
-    background: (props) =>
-      props.color === 'red'
-        ? 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)'
-        : 'linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)',
-    border: 0,
-    borderRadius: 3,
-    boxShadow: (props) =>
-      props.color === 'red'
-        ? '0 3px 5px 2px rgba(255, 105, 135, .3)'
-        : '0 3px 5px 2px rgba(33, 203, 243, .3)',
-    color: 'white',
-    height: 48,
-    padding: '0 30px',
-    margin: 8,
-  },
-});
+// or
 
-function MyButton(props) {
-  const { color, ...other } = props;
-  const classes = useStyles(props);
-  return <Button className={classes.root} {...other} />;
+// import { Button } from 'react-bootstrap';
+// import Button from 'react-bootstrap/Button'
+
+import { BrowserRouter as Router, Link, NavLink, Redirect, Prompt} from 'react-router-dom';
+import { Navbar, Nav, NavDropdown, Form,  FormControl, Button, Table,Dropdown,Card,CardDeck} from 'react-bootstrap';
+const Styles = styled.div`
+
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.section-image {
+  width: auto;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
 }
 
-MyButton.propTypes = {
-  color: PropTypes.oneOf(['blue', 'red']).isRequired,
-};
-
-export default function AdaptingHook() {
-  return (
-    <React.Fragment>
-      <MyButton color="red">Red</MyButton>
-      <MyButton color="blue">Blue</MyButton>
-    </React.Fragment>
-  );
+.section {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
 }
+.section.reverse {
+  flex-wrap: wrap-reverse;
+}
+.section-content-container {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 50%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+}
+
+.section-image-container {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 50%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+}
+.section-image-right {
+  position: absolute;
+  right: 0px;
+  height: 44.625rem;
+}
+img, svg {
+  vertical-align: middle;
+}
+* {
+  font-family: "Metropolis";
+}
+
+.section-description li {
+  vertical-align: middle;
+  background: url(/static/media/tick.472f80e1.svg) 0px center no-repeat;
+  padding: 0.6rem 0px 0.5rem 1.8rem;
+  list-style: none;
+  margin: 0px;
+}
+.section-image-container.left {
+  align-items: center;
+}
+.highlightme {
+  color: #f5a623;
+  font-weight: 600;
+}
+.section-heading {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 3.5rem;
+  line-height: 4.2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: left;
+  color: rgba(0,0,0,.6);
+}
+.section-image-container.left {
+  align-items: center;
+}
+
+`;
+
+
+function Buton() {
+
+
+
+
+  // import { GoogleLogin } from 'react-google-login';
+
+
+    return (
+
+
+    <Styles>
+
+
+
+
+
+
+    </Styles>
+
+
+    );
+  }
+  export default Buton;
